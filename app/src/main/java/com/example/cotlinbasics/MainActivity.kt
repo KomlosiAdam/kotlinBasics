@@ -42,6 +42,6 @@ class MainActivity : AppCompatActivity() {
 
         data class WeatherResponse(
             val main: Main,
-        )
+        )//uj funkcio
     }
 }
