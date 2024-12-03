@@ -11,6 +11,7 @@ import androidx.appcompat.app.AppCompatActivity
 
 private lateinit var openCalculatorButton: Button
 private lateinit var udvozlesOldalraButton: Button
+private lateinit var openWeatherButton: Button
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -25,6 +26,7 @@ class MainActivity : AppCompatActivity() {
 
         openCalculatorButton = findViewById(R.id.openCalculatorButton);
         udvozlesOldalraButton = findViewById(R.id.udvozlesOldalraButton);
+        openWeatherButton = findViewById(R.id.openWeatherButton);
 
         udvozlesOldalraButton.setOnClickListener() {
             val intent = Intent(this, GreetingActivity::class.java)
@@ -35,6 +37,12 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, CalculatorActivity::class.java)
             startActivity(intent)
         }
+
+        openWeatherButton.setOnClickListener() {
+            val intent = Intent(this, WeatherActivity::class.java)
+            startActivity(intent)
+        }
+
 
         data class Main(
             val temp: Float,

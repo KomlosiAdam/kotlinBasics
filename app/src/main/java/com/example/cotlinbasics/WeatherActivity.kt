@@ -5,8 +5,6 @@ import android.util.Log
 import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 import com.example.cotlinbasics.modell.WeatherResponse
 import com.example.cotlinbasics.network.WeatherService
 import retrofit2.Call
