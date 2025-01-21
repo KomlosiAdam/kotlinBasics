@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
@@ -10,11 +10,65 @@
 
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:text="Időjárási adatok megjelenítése"
         android:gravity="center"
         android:textSize="12sp"
+        android:id="@+id/textviewTemp"
         tools:ignore="MissingConstraints"
-        android:id="@+id/textviewTemp"/>
+        android:layout_marginTop="300dp"/>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Időjárási adatok megjelenítése"
+        android:gravity="center"
+        android:textSize="12sp"
+        android:id="@+id/textviewTempMin"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Időjárási adatok megjelenítése"
+        android:gravity="center"
+        android:textSize="12sp"
+        android:id="@+id/textviewHumidity"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Időjárási adatok megjelenítése"
+        android:gravity="center"
+        android:textSize="12sp"
+        android:id="@+id/textviewWindSpeed"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Adja meg a város nevét: "
+        android:gravity="center"
+        android:textSize="12sp"
+        android:id="@+id/textviewTown"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="12sp"
+        android:id="@+id/editTextTown"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="12sp"
+        android:text="Keresés"
+        android:id="@+id/buttonTown"
+        tools:ignore="MissingConstraints" />
+
+</LinearLayout>
