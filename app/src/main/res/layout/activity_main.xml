@@ -1,25 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MainActivity">
-
+    tools:context=".MainActivity"
+    android:gravity="center_vertical"
+    >
     <Button
-        android:id="@+id/udvozlesOldalraButton"
-        android:layout_width="wrap_content"
+        android:id="@+id/openGreetingButton"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_margin="48dp"
-        android:text="Üdvözlés oldal megnyitása" />
+        android:text="Greeting"
+        android:layout_marginHorizontal="30dp"/>
 
     <Button
         android:id="@+id/openCalculatorButton"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:text="Számloógép megnyitása" />
+        android:text="Calculator"
+        android:layout_marginHorizontal="30dp"/>
+
+    <Button
+        android:id="@+id/openWeatherButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Weather"
+        android:layout_marginHorizontal="30dp"/>
+
+    <Button
+        android:id="@+id/openUserListButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="UserList"
+        android:layout_marginHorizontal="30dp"/>
+    <Button
+        android:id="@+id/randomOpenUserListButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="RandomUserList"
+        android:layout_marginHorizontal="30dp"/>
 
 </LinearLayout>

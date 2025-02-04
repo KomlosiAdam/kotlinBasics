@@ -12,13 +12,22 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.CotlinBasics"
+        android:theme="@style/Theme.KotlinBasics"
         tools:targetApi="31">
+        <activity
+            android:name=".RandomUserListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".UserListActivity"
+            android:exported="false" />
         <activity
             android:name=".WeatherActivity"
             android:exported="false" />
         <activity
-            android:name=".GreetingActivity"
+            android:name=".GreetingsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CalculatorActivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
@@ -29,7 +38,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".CalculatorActivity" />
     </application>
 
 </manifest>

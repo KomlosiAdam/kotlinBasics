@@ -1,4 +1,4 @@
-package com.example.cotlinbasics
+package com.example.kotlinbasics
 
 import org.junit.Test
 
