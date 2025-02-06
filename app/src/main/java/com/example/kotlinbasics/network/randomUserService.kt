@@ -9,7 +9,7 @@ import javax.xml.transform.Result
 interface RandomUserService {
 
     @GET("/api/")
-    fun getRandomUser(
+    suspend fun getRandomUser(
         @Query("results") result: Int,
-    ): Call<RandomUserResponse>
+    ): RandomUserResponse
 }
