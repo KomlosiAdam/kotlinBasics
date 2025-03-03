@@ -1,4 +1,3 @@
 <resources>
-    <string name="app_name">kotlinBasics</string>
-    <string name="title_activity_greetings">GreetingsActivity</string>
+    <string name="app_name">KotlinBasics</string>
 </resources>

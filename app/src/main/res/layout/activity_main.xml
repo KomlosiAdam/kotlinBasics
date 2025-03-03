@@ -5,42 +5,52 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     tools:context=".MainActivity"
-    android:gravity="center_vertical"
-    >
-    <Button
-        android:id="@+id/openGreetingButton"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Greeting"
-        android:layout_marginHorizontal="30dp"/>
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:padding="16dp">
 
     <Button
-        android:id="@+id/openCalculatorButton"
-        android:layout_width="match_parent"
+        android:id="@+id/OpenGreeting_Button"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Calculator"
-        android:layout_marginHorizontal="30dp"/>
-
+        android:text="Üdvözlés megnyitása"
+        android:layout_marginTop="16dp"/>
     <Button
-        android:id="@+id/openWeatherButton"
-        android:layout_width="match_parent"
+        android:id="@+id/OpenCalculator_Button"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Weather"
-        android:layout_marginHorizontal="30dp"/>
-
+        android:text="Számológép megnyitása"
+        android:layout_marginTop="16dp"/>
     <Button
-        android:id="@+id/openUserListButton"
-        android:layout_width="match_parent"
+        android:id="@+id/OpenWeather_Button"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="UserList"
-        android:layout_marginHorizontal="30dp"/>
+        android:text="Időjárás megnyitása"
+        android:layout_marginTop="16dp"/>
     <Button
-        android:id="@+id/randomOpenUserListButton"
-        android:layout_width="match_parent"
+        android:id="@+id/OpenUsers_Button"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="RandomUserList"
-        android:layout_marginHorizontal="30dp"/>
+        android:text="Felhasználók megtekintése"
+        android:layout_marginTop="16dp"/>
+    <Button
+        android:id="@+id/OpenRandomUsers_Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Random megtekintése"
+        android:layout_marginTop="16dp"/>
+    <Button
+        android:id="@+id/OpenStudents_Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Random megtekintése"
+        android:layout_marginTop="16dp"/>
+    <Button
+        android:id="@+id/openColorListButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Color list"
+        android:layout_marginTop="16dp"/>
 
 </LinearLayout>

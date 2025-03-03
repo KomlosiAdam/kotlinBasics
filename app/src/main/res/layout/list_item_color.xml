@@ -2,13 +2,16 @@
     android:layout_height="wrap_content"
     android:padding="12dp"
     android:orientation="horizontal"
-    xmlns:android="http://schemas.android.com/apk/res/android">
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#edf8ee"
+    android:layout_margin="4dp">
 
     <ImageView
-        android:id="@+id/imageViewProfile"
+        android:id="@+id/colorImageView"
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:src="@android:drawable/presence_offline" />
+        android:background="#000"
+        android:layout_gravity="center_vertical" />
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -16,28 +19,25 @@
         android:layout_marginLeft="8dp"
         android:orientation="vertical">
         <TextView
-            android:id="@+id/textViewName"
-            android:textSize="22sp"
+            android:id="@+id/nameText"
+            android:textSize="18sp"
             android:textStyle="bold"
             android:layout_height="wrap_content"
             android:layout_width="wrap_content"
-            android:text="Név" />
+            android:text="color name" />
         <TextView
-            android:id="@+id/textViewEmail"
+            android:id="@+id/yearText"
             android:textSize="16sp"
             android:textColor="@android:color/darker_gray"
             android:layout_height="wrap_content"
             android:layout_width="wrap_content"
-            android:text="example@example.com"/>
+            android:text="coloryear"/>
         <TextView
-            android:id="@+id/textViewCountry"
+            android:id="@+id/pantoneText"
             android:textSize="16sp"
             android:textColor="@android:color/darker_gray"
             android:layout_height="wrap_content"
             android:layout_width="wrap_content"
-            android:text="Hungary"
-            android:textStyle="bold"
-
-            android:layout_gravity="end"/>
+            android:text="pantonecolor"/>
+        </LinearLayout>
     </LinearLayout>
-</LinearLayout>

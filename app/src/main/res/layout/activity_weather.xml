@@ -1,55 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".WeatherActivity"
+    tools:context=".MainActivity"
     android:orientation="vertical"
-    android:gravity="center"
-    >
+    android:gravity=""
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/cityEditText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"/>
+
+        <Button
+            android:id="@+id/searchWeatherButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="🔎"/>
+
+    </LinearLayout>
 
     <TextView
         android:id="@+id/textview_temp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Időjárás adatok megjelenitése itt"
-        android:textSize="20sp"
-        android:gravity="center"/>
-
-    <TextView
-        android:id="@+id/textview_tempmin"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:text="Páratartalom"
-        android:textSize="20sp" />
-    <TextView
-        android:id="@+id/textview_windSpeed"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:text="Szél sebesség"
-        android:textSize="20sp" />
-
-    <EditText
-        android:id="@+id/editTextCity"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Írja be a város nevét"
-        android:textSize="18sp"
-        android:padding="16dp"
-        android:inputType="text"/>
-
-    <Button
-        android:id="@+id/button_getWeather"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Időjárás lekérése"
-        android:textSize="18sp"
-        android:layout_marginTop="16dp"
-        android:padding="10dp"/>
+        android:layout_marginBottom="36dp"
+        android:padding="8dp"
+        android:layout_gravity="center_vertical"
+        android:text="Időjárás adatok megjelenítése itt"
+        android:textSize="24sp" />
 
 </LinearLayout>
